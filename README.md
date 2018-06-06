@@ -1,0 +1,1 @@
+This repository will contain basic samples of spring cloud stack
