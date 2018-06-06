@@ -20,15 +20,12 @@ public class FeignClientTest {
 
 	@Autowired
     private GreetingClient greetingClient;
-	
-	@Autowired
-	private EurekaClient discoveryClient;
- 
+	 
     public static void main(String[] args) {
         SpringApplication.run(FeignClientTest.class, args);
     }
     
-    @RequestMapping("/greetings-123")
+    @RequestMapping("/greeting-feign")
     public String greeting() {
         return greetingClient.greeting();
     }
